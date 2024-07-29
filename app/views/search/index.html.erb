@@ -1,0 +1,17 @@
+<h1> Closest Station: </h1> 
+<div class='station'>
+  <h4><p class="name"><%= @station.name %></p></h4>
+    <p class="fuel_type">Fuel Type: <%= @station.fuel_type %></p>
+    <p class="access_times">Hours of Operation: <%= @station.access_times %></p>
+    <p class="address">Address: <%= @station.address %></p>
+    <p class="distance">Distance: <%= @station.distance %> miles </p>
+</div>
+<div class='direction'>
+    <p class="travel_time"> Travel Time: <%= @travel_time %> minutes </p>
+    <p class="directions"> Directions: 
+      <ul> 
+        <% @directions.each do |direction|%> </p>
+          <li> <%= direction %> </li>
+        <% end %>
+      </ul>
+</div>
